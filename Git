@@ -1,0 +1,37 @@
+Git.
+
+Nombre de la carpeta principal: Proyecto Integrador
+
+1. Primero clonar el proyecto. (Descarga todos los directorios y archivos del proyecto a tu pc)
+git clone https://github.com/tebeck/Trabajo-integrador.git
+
+2. git status ( Este comando es para ver las diferencias del proyecto en Git, y el proyecto que te descargaste y estas modificando)
+
+3. Para subir la parte de su proyecto que  cambiaron:
+
+	git add <archivo>
+
+Ejemplo: 
+	
+	modificado:    Proyecto Integrador/Thomas/index.html
+
+4. 
+
+
+git init
+git add .
+git commit -m 'First commit'
+git remote add origin <remote repository URL>
+git remote -v
+git push origin master
+
+
+
+Remove.
+
+git remove -r "Nombre directorio"
+git commit -m "Duplicado"
+git push master origin
+
+
+
