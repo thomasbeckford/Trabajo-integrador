@@ -18,20 +18,4 @@ Ejemplo:
 4. 
 
 
-git init
-git add .
-git commit -m 'First commit'
-git remote add origin <remote repository URL>
-git remote -v
-git push origin master
-
-
-
-Remove.
-
-git remove -r "Nombre directorio"
-git commit -m "Duplicado"
-git push master origin
-
-
 
