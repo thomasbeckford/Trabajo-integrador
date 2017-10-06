@@ -1,0 +1,14 @@
+.list-group{
+	width: 500px;
+    height: 800px;
+    padding-top: 50px;
+    border-style: hidden;
+    padding-left: 10px;
+    
+   
+}
+
+ol{
+	margin-left: -22px;
+	margin-bottom: -10px;
+}

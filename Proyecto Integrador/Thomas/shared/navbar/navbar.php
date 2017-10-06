@@ -55,7 +55,8 @@
                 <!-- <li class="nav-item item"><a class="nav-link" href="registrate.php">Registrate </a></li> -->
                 <li class="nav-item item">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn btn-outline-dark">F.A.Q</button>
+                      <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span>Accedé</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
@@ -71,5 +72,8 @@
 
         </ul>
     </div>
+
+
+
 
 </nav>
