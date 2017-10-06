@@ -57,3 +57,7 @@ footer span  {font-size: 12px !important;line-height: 1.465 !important;color: #5
 .fadeIn {
   animation-name: fadeIn;
 }
+
+.main-container {
+  margin-top: 40px;
+}

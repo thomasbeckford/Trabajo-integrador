@@ -16,8 +16,9 @@
 
                         <input class="btn btn-lg btn-primary btn-block" name="login" value="Continuar" type="submit">
                         <hr>
-                        <p>¿Cambio tu email o telefono?</p>
-                        <span>Contactanos y te ayudamos a solucionar el problema.</span>
+                        <p class="text-center">¿Cambio tu email o telefono?</p>
+                        <p class="text-center"><span>Contactanos y te ayudamos a solucionar el problema. <a href="index.php" class="service">Servicio al cliente</a></span></p>
+
                     </form>
                 </div>
         </div>

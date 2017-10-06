@@ -1,3 +1,4 @@
+
 <?php
 
 //register.php
@@ -75,6 +76,8 @@ if(isset($_POST['register'])){
         //What you do here is up to you!
         echo 'Thank you for registering with our website.';
         header("Location: ../ingresa.php");
+    } else {
+      echo "error";
     }
 
 }
