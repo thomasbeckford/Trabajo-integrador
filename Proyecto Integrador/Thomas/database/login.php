@@ -68,7 +68,7 @@ if(isset($_POST['login'])){
 
         } else{
             //$validPassword was FALSE. Passwords do not match.
-            die('Datos incorrectos!');
+    die('<div class="container col-md-5"><h3 style="margin-top: 50px">Datos incorrectos.</h3><h4>Quedan n intentos, recupera tu password aca <a href="../forgot-pass.php">Recuperar password</a>.</h4> <br><br> <a class="btn btn-block btn-outline-danger" role="button" href="../ingresa.php">Volver</a></div>');
         }
     }
 

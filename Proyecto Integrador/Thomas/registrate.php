@@ -1,35 +1,40 @@
 <?php include("./shared/head/head.php");
       include("./shared/navbar/navbar.php"); ?>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <div class="container py-3 animated fadeIn fast">
     <div class="row">
         <div class="col-md-6 col-lg-4 mx-auto">
                 <div class="card card-body">
                     <h3 class="text-center mb-4">Registrate</h3>
                     <form action="./database/register.php" method="post">
-                      <!-- <div class="alert alert-danger">
-                        <a class="close" data-dismiss="alert" href="#">×</a>La contraseña es corta.
-                      </div> -->
+
+
+<script src="./assets/passValidator.js"></script>
+
+
                       <div class="form-group"><span class="font-weight-bold">Usuario / Telefono movil</span>
-                          <input class="form-control input-lg" name="username" type="text">
+                          <input id="fname" class="form-control input-lg" name="username" required type="text">
                       </div>
                         <div class="form-group"><span class="font-weight-bold">Email</span>
-                            <input class="form-control input-lg"  name="email" type="email">
+                            <input class="form-control input-lg"  name="email" required type="email">
                         </div>
-                        <div class="form-group"><span class="font-weight-bold">Contraseña</span>
-                            <input class="form-control input-lg" name="password" value="" type="password" pattern=".{6,}">
+                        <div class="form-group"><span class="font-weight-bold">Contraseña ( 6 caracteres minimo )</span>
+                            <input id="password" class="form-control input-lg" name="password" value="" required type="password" onkeyup='check();' pattern=".{6,}">
                         </div>
                         <div class="form-group"><span class="font-weight-bold">Confirma contraseña</span>
-                            <input class="form-control input-lg" name="confirm_password" value="" type="password" pattern=".{6,}">
+                            <input id="confirm_password" class="form-control input-lg" name="confirm_password" required value="" onkeyup='check();' type="password" pattern=".{6,}">
                         </div>
+                          <div id='message'></div>
                         <div class="checkbox">
                             <label class="small">
-                                <input name="terms" type="checkbox"> Acepto los <a href="#">terminos y condiciones del servicio</a>.
+                              <p><b> * Todos los campos son requeridos.</b></p>
+                                <input name="terms" type="checkbox" required> Acepto los <a href="#">terminos y condiciones del servicio</a>.
+
                             </label>
-                        <input class="btn btn-lg btn-primary btn-block" name="register" value="Creá tu cuenta de Freemarket" type="submit">
+                        <input id="createAccount" class="btn btn-lg btn-primary btn-block" name="register" value="Creá tu cuenta de Freemarket" type="submit">
                         <hr>
                       <span>¿Ya tenés una cuenta?
-                        <a class="a-link-emphasis font-weight-bold" href="ingresa.php">Ingres&aacute ac&aacute <i class="fa fa-angle-right"></i></a>
+                        <a class="a-link-emphasis font-weight-bold" href="ingresa.php">Ingresá acá <i class="fa fa-angle-right"></i></a>
                       </span>
                     </div>
                     </form>

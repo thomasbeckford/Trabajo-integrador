@@ -1,11 +1,11 @@
 <?php session_start();?>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="#">
-    <img src="./assets/commerce.svg" width="30" height="30" alt="">
+    <a class="navbar-brand" href="index.php">
+    <img  src="./assets/commerce.svg" width="30" height="30" alt="">
       </a>
         <a class="navbar-brand" href="index.php">FreeMarket</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       <div class="collapse navbar-collapse"> <!-- No muestra el buscador en tables y moviles -->
@@ -23,12 +23,15 @@
 
         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-amazon ">
           <div role="search" class="sbx-amazon__wrapper">
-            <input type="search" name="search" placeholder="" autocomplete="off" required="required" class="sbx-amazon__input">
+            <input placeholder="Funcion buscar no disponible.. " type="search" name="search" autocomplete="off" required="required" class="sbx-amazon__input">
             <button type="submit" title="Submit your search query." class="sbx-amazon__submit">
               <svg role="img" aria-label="Search">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-11"></use>
               </svg>
             </button>
+
+            <!-- Clear the search query :) -->
+
             <button type="reset" title="Clear the search query." class="sbx-amazon__reset">
               <svg role="img" aria-label="Reset">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-2"></use>
