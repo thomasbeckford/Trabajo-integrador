@@ -58,17 +58,17 @@
                 <!-- <li class="nav-item item"><a class="nav-link" href="registrate.php">Registrate </a></li> -->
                 <li class="nav-item item">
                   <div class="btn-group">
-                      <button class="btn btn-outline-dark">F.A.Q</button>
                       <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span>Accedé</span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
                       <a class="menu-drop" href="registrate.php"><button class="dropdown-item" type="button">Registrate</button>
                       <a class="menu-drop" href="ingresa.php"><button class="dropdown-item" type="button">Ingresa</button></a>
+                      <a class="menu-drop" href="preguntas.php"><button class="dropdown-item">Preguntas frecuentes</button></button></a>
                     </div>
                   </div>
-
                 </li>
+
                 <?php
             }
          ?>
