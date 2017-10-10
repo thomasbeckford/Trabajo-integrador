@@ -35,7 +35,7 @@ if(isset($_POST['register'])){
     //Now, we need to check if the supplied username already exists.
 
     //Construct the SQL statement and prepare it.
-    $sql = "SELECT COUNT(username) AS num FROM users WHERE username = :username";
+    $sql = "SELECT COUNT(username) AS num FROM users WHERE username = :username" ;
     $stmt = $pdo->prepare($sql);
 
     //Bind the provided username to our prepared statement.
@@ -52,7 +52,16 @@ if(isset($_POST['register'])){
     //I'm just going to kill the script completely, as error handling is outside
     //the scope of this tutorial.
     if($row['num'] > 0){
-        die('That username already exists!');
+        die('<div class="main-container container col-md-6"><h2>Ese nombre de usuario ya existe!<h2><hr><br><br><a role="button" class="btn btn-block btn-danger" href="../registrate.php">Volver</div>');
+    }
+
+    $sql = "SELECT COUNT(email) AS num FROM users WHERE email = :email";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(':email', $email);
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if($row['num'] > 0){
+die('<div class="main-container container col-md-6"><h2>Ese email ya existe!<h2><hr><br><br><a role="button" class="btn btn-block btn-danger" href="../registrate.php">Volver</div>');
     }
 
     //Hash the password as we do NOT want to store our passwords in plain text.
@@ -73,9 +82,12 @@ if(isset($_POST['register'])){
 
     //If the signup process is successful.
     if($result){
-        //What you do here is up to you!
-        echo 'Thank you for registering with our website.';
-        header("Location: ../ingresa.php");
+
+        $msg = "Bienvenido a FreeMarket!\nConfirma tu email acá.";
+        $msg = wordwrap($msg,70);
+        mail($email,"Cuenta creada con exito!",$msg);
+
+      header("Location: ../ingresa.php");
     } else {
       echo "error";
     }

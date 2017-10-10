@@ -1,17 +1,18 @@
 <?php include("./shared/head/head.php");
       include("./shared/navbar/navbar.php"); ?>
+
+<?php
+
+ ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <div class="container py-3 animated fadeIn fast">
     <div class="row">
         <div class="col-md-6 col-lg-4 mx-auto">
                 <div class="card card-body">
                     <h3 class="text-center mb-4">Registrate</h3>
+
                     <form action="./database/register.php" method="post">
-
-
-<script src="./assets/passValidator.js"></script>
-
-
+                      <script src="./assets/passValidator.js"></script>
                       <div class="form-group"><span class="font-weight-bold">Usuario / Telefono movil</span>
                           <input id="fname" class="form-control input-lg" name="username" required type="text">
                       </div>

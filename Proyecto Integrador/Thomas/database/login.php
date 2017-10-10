@@ -43,7 +43,7 @@ if(isset($_POST['login'])){
     if($user === false){
         //Could not find a user with that username!
         //PS: You might want to handle this error in a more user-friendly manner!
-        die('Incorrect username / password combination!');
+        die('<div class="container col-md-6"><h3>Contraseña o Usuario invalido!</h3><br><br><a href="../ingresa.php" class="btn btn-block btn-danger" role="button">Volver</div>');
     } else{
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.

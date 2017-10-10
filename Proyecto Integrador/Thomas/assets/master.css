@@ -6,6 +6,9 @@ span {font-size: 13px;}
 
 a button {cursor: pointer; }
 
+.main-container{
+  margin-top: 50px;
+}
 
 footer span  {font-size: 12px !important;line-height: 1.465 !important;color: #555 !important;}
 

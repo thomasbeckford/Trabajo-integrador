@@ -21,10 +21,12 @@
           </symbol>
         </svg>
 
-        <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-amazon ">
+        <form novalidate="novalidate" onsubmit="return false;" class=" sbx-amazon col-md-10 ">
           <div role="search" class="sbx-amazon__wrapper">
             <input placeholder="Funcion buscar no disponible.. " type="search" name="search" autocomplete="off" required="required" class="sbx-amazon__input">
-            <button type="submit" title="Submit your search query." class="sbx-amazon__submit">
+
+
+        <button type="submit" title="Submit your search query." class="sbx-amazon__submit">
               <svg role="img" aria-label="Search">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-11"></use>
               </svg>
@@ -48,9 +50,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto"> <!-- class ml-auto set right items -->
     <!-- Que hago aca ?:
-          Inicio seccion. Pregunto si existe la variable "user" dentro de la sesion. Si existe, le doy la bienvenida. Si no, le digo que ingrese. -->
+          Pregunto si existe la variable "user" dentro de la sesion. Si existe, le doy la bienvenida. Si no, le digo que ingrese. -->
         <?php
-
             if(isset($_SESSION['user_id'])){
               ?><li class="nav-item"><a class="nav-link" href="#"><?php include("./database/check_session.php"); ?> </a></li><?php
             } else {

@@ -14,7 +14,7 @@
                           <input class="form-control input-lg" name="username" type="text" required>
                       </div><span class="align-right">
                         <span  class="font-weight-bold">Contraseña </span> <span ><a  href="forgot-pass.php">¿Olvidaste la contraseña?</a></span><div class="form-group">
-                            <input class="form-control input-lg" name="password" type="password" pattern=".{6,}" required>
+                            <input class="form-control input-lg" name="password" type="password" required>
                         </div>
                         <span class="ingresa"><input type="checkbox"> ¿Mantenerme conectado?
                           <a tabindex="0" data-toggle="popover" rel="popover" data-html="true" data-trigger="focus"
@@ -28,7 +28,7 @@
                           <input class="btn btn-lg btn-primary btn-block" name="login" value="Ingres&aacute" type="submit">
                         <hr>
                       <span>¿Nuevo en FreeMarket?
-                        <a class="a-link-emphasis font-weight-bold" href="registrate.php">Registrate ac&aacute <i class="fa fa-angle-right"> </i></a>
+                        <a class="a-link-emphasis font-weight-bold" href="registrate.php">Registrate acá <i class="fa fa-angle-right"> </i></a>
                       </span>
                     </form>
                 </div>
