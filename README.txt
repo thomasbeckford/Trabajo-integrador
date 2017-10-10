@@ -1,6 +1,5 @@
 
 # Pagina web E-COMMERCE
-#### Trabajo grupal, Digital House.
 
 
 Pasos para colaboradores:
