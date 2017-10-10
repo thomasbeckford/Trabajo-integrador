@@ -1,8 +1,9 @@
 
-https://github.com/tebeck/Trabajo-integrador
+**Pagina web E-COMMERCE**
+>Trabajo grupal, Digital House.
 
 
-Git.
+Pasos para colaboradores:
 
 Descargar git: https://git-scm.com/download/win
 
@@ -23,6 +24,8 @@ Nombre de la carpeta principal: Proyecto Integrador
 	modificado:    Proyecto Integrador/Thomas/index.html
 	
 	- git add "Proyecto Integrador/Thomas/index.html"
+
+++ Para agregar todos los cambios que se realizaron poner: git add .
 
 4. Confirmar los cambios:
 
