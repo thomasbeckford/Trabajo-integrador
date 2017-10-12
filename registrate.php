@@ -11,7 +11,7 @@
                 <div class="card card-body">
                     <h3 class="text-center mb-4">Registrate</h3>
 
-                    <form action="./database/register.php" method="post">
+                    <form action="./json-database/save-json.php" method="post"> <!-- En vez que apunte a la base mysql ( ./database/register.php ), apunta al json ( ./json-database/save-json.php ) -->
                       <script src="./assets/passValidator.js"></script>
                       <div class="form-group"><span class="font-weight-bold">Usuario / Telefono movil</span>
                           <input id="fname" class="form-control input-lg" name="username" required type="text">

@@ -6,7 +6,7 @@
         <div class="col-md-6 col-lg-4 mx-auto">
                 <div class="card card-body">
                     <h3 class="text-center mb-4">Ingresa</h3>
-                    <form action="./database/login.php" method="post">
+                    <form action="./json-database/login-json.php" method="post"> <!-- En vez de apuntar a Mysql(./database/login.php), aputamos a json -->
                       <!-- <div class="alert alert-danger">
                         <a class="close" data-dismiss="alert" href="#">×</a>La contraseña es corta.
                       </div> -->
