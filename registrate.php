@@ -11,7 +11,7 @@ function validar_formulario(){
   }
   if (isset($_POST["password"]) && isset($_POST["confirm_password"])){
     if($_POST["password"] !== $_POST["confirm_password"]){
-      $array_de_errores[] = "Las contraseñas no son iguales";
+      $array_de_errores[] = "Las contraseñas no coinciden";
     }else{
       if( strlen($_POST["confirm_password"]) < 6 ){
         $array_de_errores[] = "La contraseña deben tener 6 o mas digitos";
@@ -20,7 +20,7 @@ function validar_formulario(){
   }
   if(isset($_POST["email"])){
     if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-      $array_de_errores[] = "El email ingresado, no es un email valido";
+      $array_de_errores[] = "El email ingresado no es valido";
     }
   }
   return $array_de_errores;
