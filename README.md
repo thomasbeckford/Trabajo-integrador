@@ -34,5 +34,17 @@ Nombre de la carpeta principal: Proyecto Integrador
 
 	git push origin master
 
+-----------------------------------------------------
+
+## Screenshots
+
+![alt text](screenshots/FM1.png "Description goes here")
+
+![alt text](screenshots/FM2.png "Description goes here")
+
+![alt text](screenshots/FM3.png "Description goes here")
+
+![alt text](screenshots/FM4.png "Description goes here")
+
 
 
