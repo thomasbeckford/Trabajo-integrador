@@ -1,5 +1,8 @@
 <?php
 
+require ("../functions/validar-form.php");
+
+
 $pass = $_POST['password'];
 
 include("./encrypter.php");

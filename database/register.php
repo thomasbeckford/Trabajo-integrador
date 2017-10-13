@@ -1,12 +1,16 @@
 
 <?php
 
+
+
 //register.php
 
 /**
  * Start the session.
  */
 session_start();
+
+require ("../functions/validar-form.php"); //nueva funcion no testeada aca!
 
 /**
  * Include ircmaxell's password_compat library.
