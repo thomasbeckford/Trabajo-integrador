@@ -7,26 +7,26 @@
       <div class="jumbotron ">
         <div class="container">
           <h1 class="display-3">FreeMarket!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p> La nueva tienta de compra y venta online mas rapida, donde puedes contactarte con tu comprador y o vendedor de manera segura.</p>
           <p><a class="btn btn-primary btn-lg disabled" href="#" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
       <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+              <h2>Ofertas de la semana</h2>
+              <p>Conocé los productos en que están en descuento y ahorrá con nosotros. Entrá ya y descubrí todas las increíbles ofertas que tenemos para vos y tu familia. </p>
+              <p><a class="btn btn-secondary disabled" href="#" role="button">Ofertas &raquo;</a></p>
             </div>
             <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+              <h2>Descuentos</h2>
+              <p> Encontra hasta % 50 de descuento en la seccion de camaras, tablets, celulares y sus distintos tipos de accesorios.</p>
+              <p><a class="btn btn-secondary disabled" href="#" role="button">Descuentos &raquo;</a></p>
             </div>
             <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+              <h2>Pay Free Market</h2>
+              <p> Pay Free Market, tu plataforma de pagos on line. Recibi tu dinero al instante y tus pagos sin costos ocultos. </p>
+              <p><a class="btn btn-secondary disabled" href="#" role="button">Pay free &raquo;</a></p>
             </div>
           </div>
       </div>
