@@ -1,6 +1,6 @@
 <?php
 
-require ("../functions/validar-form.php");
+require("../functions/validar-form.php");
 
 
 $pass = $_POST['password'];

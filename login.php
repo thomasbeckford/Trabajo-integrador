@@ -6,7 +6,7 @@
         <div class="col-md-6 col-lg-4 mx-auto">
                 <div class="card card-body">
                     <h3 class="text-center mb-4">Ingresa</h3>
-                    <form action="./json-database/login-json.php" method="post"> <!-- En vez de apuntar a Mysql(./database/login.php), aputamos a json -->
+                    <form action="./json-database/login-json.php" method="post"> <!-- En vez de apuntar a Mysql(./database/login.php), aputamos a json ./json-database/login-json.php -->
                       <span class="font-weight-bold">Usuario / Telefono movil</span><div class="form-group">
                           <input class="form-control input-lg" name="username" type="text" required>
                       </div><span class="align-right">

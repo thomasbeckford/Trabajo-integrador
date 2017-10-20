@@ -20,7 +20,7 @@ if(file_exists($filetxt)) {
   $pass = encryptIt($_POST['password']);
 
   foreach ($arr_data as $key => $value) {
-    if (  $value['password'] ==  $pass && $_POST['username'] == $value['username'] ){
+    if (  $value['password'] ==  $pass && $_POST['username'] == $value['username'] ) {
 
         $_SESSION['user_id'] = $value['username'];
         $_SESSION['logged_in'] = time();
@@ -32,13 +32,10 @@ if(file_exists($filetxt)) {
 
 
   } else {
-          require('../shared/head/head.php');
-          include('../shared/navbar/navbar.php');
-          die('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body"><div><h3>Datos incorrectos!</h3><br><br><a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña<br><a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a></div>');
+          echo ('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body"><div><h3>Datos incorrectos!</h3><br><br><a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña<br><a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a></div>');
+
+    }
   }
 }
-}
-else echo 'The file '. $filetxt .' not exists';
-
 
 ?>

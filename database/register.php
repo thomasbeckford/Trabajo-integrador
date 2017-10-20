@@ -1,9 +1,10 @@
 
 <?php
 session_start();
-require ("../functions/validar-form.php"); //nueva funcion no testeada aca!
-require 'lib/password.php';
-require 'dbconnect.php';
+//require ("../functions/validar-form.php"); //nueva funcion no testeada aca!
+include('lib/password.php');
+include('dbconnect.php');
+
 
 // Si existe el post de register
 // Utilizo pdo para el select de mysql
@@ -21,14 +22,13 @@ if(isset($_POST['register'])){
     //Bind the provided username to our prepared statement.
     $stmt->bindValue(':username', $username);
 
-    //Execute.
+    //Execute.)
     $stmt->execute();
 
     //Fetch the row.
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    //If the provided username already exists - display error.
-    //TO ADD - Your own method of handling this error. For example purposes,
+    // El usuario ya existe ?
     if($row['num'] > 0){
         die('<div class="main-container container col-md-6"><h2>Ese nombre de usuario ya existe!<h2><hr><br><br><a role="button" class="btn btn-block btn-danger" href="../registrate.php">Volver</div>');
     }
@@ -61,7 +61,6 @@ if(isset($_POST['register'])){
 
     //If the signup process is successful.
     if($result){
-
         $msg = "Bienvenido a FreeMarket!\nConfirma tu email acá.";
         $msg = wordwrap($msg,70);
         mail($email,"Cuenta creada con exito!",$msg);

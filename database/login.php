@@ -1,7 +1,7 @@
 <?php
 session_start();
-require 'lib/password.php';
-require 'dbconnect.php';
+include('lib/password.php');
+include('dbconnect.php');
 
 // Si existe post de login ...
 if(isset($_POST['login'])){
@@ -26,8 +26,10 @@ if(isset($_POST['login'])){
     //If $row is FALSE.
     if($user === false){
         // No encuentro el usuario en la base.
-            die('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body"><div><h3>Datos incorrectos!</h3><br><br><a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña</div><br></div><a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a><div ></div>');
-    } else{
+            die('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body">
+                  <div><h3>Datos incorrectos!</h3><br><br><a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña<br>
+                    <a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a></div>');
+    } else {
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.
 
@@ -44,14 +46,19 @@ if(isset($_POST['login'])){
             $_SESSION['email'] = $user['email'];
 
             //Redirect to our protected page, which we called home.php
-
             header('Location: ../index.php');
 
             exit;
 
-        } else{
+        } else {
             //$validPassword was FALSE. Passwords do not match.
-    die('<div class="container col-md-5"><h3 style="margin-top: 50px">Datos incorrectos.</h3><h4>Quedan n intentos, recupera tu password aca <a href="../forgot-pass.php">Recuperar password</a>.</h4> <br><br> <a class="btn btn-block btn-outline-danger" role="button" href="../login.php">Volver</a></div>');
+    die('<div class="container col-md-5">
+          <h3 style="margin-top: 50px">Datos incorrectos.</h3>
+           <h4>Quedan n intentos, recupera tu password aca
+           <a href="../passrecover.php">Recuperar password</a>
+          .</h4> <br><br>
+          <a class="btn btn-block btn-outline-danger" role="button" href="../login.php">Volver</a>
+        </div>');
         }
     }
 
