@@ -22,6 +22,10 @@
                         <div class="form-group"><span class="font-weight-bold">Confirma contraseña</span>
                             <input id="confirm_password" class="form-control input-lg" name="confirm_password" required value="" onkeyup='check();' type="password" pattern=".{6,}">
                         </div>
+
+                        <div class="form-group"><span class="font-weight-bold">Seleciona tu imagen</span>
+                          <input type="file" name="imagen" accept="image/*" required /></div>
+
                           <div id='message'></div>
                         <div class="checkbox">
                             <label class="small">
@@ -32,7 +36,7 @@
                         <input id="createAccount" class="btn btn-lg btn-primary btn-block" name="register" value="Creá tu cuenta de Freemarket" type="submit">
                         <hr>
                       <span>¿Ya tenés una cuenta?
-                        <a class="a-link-emphasis font-weight-bold" href="ingresa.php">Ingresá acá <i class="fa fa-angle-right"></i></a>
+                        <a class="a-link-emphasis font-weight-bold" href="login.php">Ingresá acá <i class="fa fa-angle-right"></i></a>
                       </span>
                     </div>
                     </form>

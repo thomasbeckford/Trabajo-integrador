@@ -1,32 +1,16 @@
 <?php
-
-//login.php
-
-/**
- * Start the session.
- */
 session_start();
-
-/**
- * Include ircmaxell's password_compat library.
- */
 require 'lib/password.php';
-
-/**
- * Include our MySQL connection.
- */
 require 'dbconnect.php';
 
-
-//If the POST var "login" exists (our submit button), then we can
-//assume that the user has submitted the login form.
+// Si existe post de login ...
 if(isset($_POST['login'])){
 
-    //Retrieve the field values from our login form.
+    // Asigno variables
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
 
-    //Retrieve the user account information for the given username.
+    //Traigo la info de la variable username y comparo con la tabla.
     $sql = "SELECT id, username, password, email FROM users WHERE username = :username";
     $stmt = $pdo->prepare($sql);
 
@@ -36,14 +20,13 @@ if(isset($_POST['login'])){
     //Execute.
     $stmt->execute();
 
-    //Fetch row.
+    // Agarro la row
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     //If $row is FALSE.
     if($user === false){
-        //Could not find a user with that username!
-        //PS: You might want to handle this error in a more user-friendly manner!
-        die('<div class="container col-md-6"><h3>Contraseña o Usuario invalido!</h3><br><br><a href="../ingresa.php" class="btn btn-block btn-danger" role="button">Volver</div>');
+        // No encuentro el usuario en la base.
+            die('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body"><div><h3>Datos incorrectos!</h3><br><br><a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña</div><br></div><a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a><div ></div>');
     } else{
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.
@@ -68,7 +51,7 @@ if(isset($_POST['login'])){
 
         } else{
             //$validPassword was FALSE. Passwords do not match.
-    die('<div class="container col-md-5"><h3 style="margin-top: 50px">Datos incorrectos.</h3><h4>Quedan n intentos, recupera tu password aca <a href="../forgot-pass.php">Recuperar password</a>.</h4> <br><br> <a class="btn btn-block btn-outline-danger" role="button" href="../ingresa.php">Volver</a></div>');
+    die('<div class="container col-md-5"><h3 style="margin-top: 50px">Datos incorrectos.</h3><h4>Quedan n intentos, recupera tu password aca <a href="../forgot-pass.php">Recuperar password</a>.</h4> <br><br> <a class="btn btn-block btn-outline-danger" role="button" href="../login.php">Volver</a></div>');
         }
     }
 

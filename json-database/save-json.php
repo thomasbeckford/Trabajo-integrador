@@ -43,10 +43,14 @@ if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password
     // saves the json string in "formdata.txt" (in "dirdata" folder)
     // outputs error message if data cannot be saved
     if(file_put_contents('formdata.json', $jsonData)) {
-              die( header("Location: ../ingresa.php") );
+
+              die( header("Location: ../login.php") );
+
 
     } else {
-      echo 'No se pudo guardar la info ( Revisar permisos de directorio )';
+
+      die ( 'No se pudo guardar la info ( Revisar permisos de directorio )' );
+
 
     }
   }

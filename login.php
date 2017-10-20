@@ -7,9 +7,6 @@
                 <div class="card card-body">
                     <h3 class="text-center mb-4">Ingresa</h3>
                     <form action="./json-database/login-json.php" method="post"> <!-- En vez de apuntar a Mysql(./database/login.php), aputamos a json -->
-                      <!-- <div class="alert alert-danger">
-                        <a class="close" data-dismiss="alert" href="#">×</a>La contraseña es corta.
-                      </div> -->
                       <span class="font-weight-bold">Usuario / Telefono movil</span><div class="form-group">
                           <input class="form-control input-lg" name="username" type="text" required>
                       </div><span class="align-right">

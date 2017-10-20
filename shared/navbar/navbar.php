@@ -1,15 +1,17 @@
 <?php session_start();?>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+<div class="col-md-3">
     <a class="navbar-brand" href="index.php">
     <img  src="./assets/commerce.svg" width="30" height="30" alt="">
       </a>
-        <a class="navbar-brand" href="index.php">FreeMarket</a>
+        <a class="navbar-brand " href="index.php">FreeMarket</a>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+</div>
       <div class="collapse navbar-collapse"> <!-- No muestra el buscador en tables y moviles -->
-
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
           <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-11" viewBox="0 0 40 40">
@@ -21,10 +23,12 @@
           </symbol>
         </svg>
 
-        <form novalidate="novalidate" onsubmit="return false;" class=" sbx-amazon col-md-10 ">
+
+<div class="col-md-12">
+
+        <form novalidate="novalidate" onsubmit="return false;" class=" sbx-amazon col-md-12">
           <div role="search" class="sbx-amazon__wrapper">
             <input placeholder="Funcion buscar no disponible.. " type="search" name="search" autocomplete="off" required="required" class="sbx-amazon__input">
-
 
         <button type="submit" title="Submit your search query." class="sbx-amazon__submit">
               <svg role="img" aria-label="Search">
@@ -33,7 +37,6 @@
             </button>
 
             <!-- Clear the search query :) -->
-
             <button type="reset" title="Clear the search query." class="sbx-amazon__reset">
               <svg role="img" aria-label="Reset">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-2"></use>
@@ -41,10 +44,7 @@
             </button>
           </div>
         </form>
-        <script type="text/javascript">
-          document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
-        </script>
-
+</div>
 
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,12 +59,13 @@
                 <!-- <li class="nav-item item"><a class="nav-link" href="registrate.php">Registrate </a></li> -->
                 <li class="nav-item item">
                   <div class="btn-group">
-                      <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span>Accedé</span>
+                      <button type="button" class="btn bg-secondary text-white disabled" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right:10px"><h6 style="display: inline">Vende</h6></button>
+                      <button type="button" class="btn bg-danger dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <h6 style="display: inline">Menu</h6>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-menu dropdown-menu-right animated fadeIn fast">
                       <a class="menu-drop" href="registrate.php"><button class="dropdown-item" type="button">Registrate</button>
-                      <a class="menu-drop" href="ingresa.php"><button class="dropdown-item" type="button">Ingresa</button></a>
+                      <a class="menu-drop" href="login.php"><button class="dropdown-item" type="button">Ingresa</button></a>
                       <a class="menu-drop" href="preguntas.php"><button class="dropdown-item">Preguntas frecuentes</button></button></a>
                     </div>
                   </div>
