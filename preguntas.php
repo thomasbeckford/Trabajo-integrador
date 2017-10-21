@@ -1,6 +1,6 @@
-<?php include("./shared/head/head.php");?>
+<?php include("./shared/head.php");?>
 <body>
-<?php include("./shared/navbar/navbar.php");?>
+<?php include("./shared/navbar.php");?>
 
 <link href="./assets/faq.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,5 +30,5 @@
 </div>
 </body>
 
-<?php include("./shared/footer/footer.php"); ?>
+<?php include("./shared/footer.php"); ?>
 </html>

@@ -2,7 +2,7 @@
 
 session_start();
 
-require('../shared/head/head.php');
+require('../shared/head.php');
 include("./encrypter.php");
 
 // path and name of the file
@@ -21,21 +21,29 @@ if(file_exists($filetxt)) {
 
   foreach ($arr_data as $key => $value) {
     if (  $value['password'] ==  $pass && $_POST['username'] == $value['username'] ) {
-
-        $_SESSION['user_id'] = $value['username'];
-        $_SESSION['logged_in'] = time();
-        $_SESSION['email'] = $value['email'];
-
-
-        header('Location: ../index.php');
-        exit;
-
-
+      $flag = 1;
+      break;
   } else {
-          echo ('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body"><div><h3>Datos incorrectos!</h3><br><br><a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña<br><a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a></div>');
-
-    }
+        $flag = 0;
   }
 }
 
+  if ( $flag == 1 ) {
+    $_SESSION['user_id'] = $value['username'];
+    $_SESSION['logged_in'] = time();
+    $_SESSION['email'] = $value['email'];
+    echo "entro aca";
+    header('Location: ../index.php');
+
+  } else {
+    echo ('<div style="margin-top:40px; text-align: center" class="container py-3 col-md-3 card card-body">
+            <div><h3>Datos incorrectos!</h3>
+              <br><br>
+              <a href="../passrecover.php" class="btn btn-block btn-primary" role="button">Recuperar contraseña<br>
+              <a href="../login.php" class="btn btn-block btn-success" role="button">Volver</a></div>');
+
+  }
+
+
+}
 ?>

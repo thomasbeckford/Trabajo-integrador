@@ -1,5 +1,5 @@
-<?php include("./shared/head/head.php");
-      include("./shared/navbar/navbar.php"); ?>
+<?php include("./shared/head.php");
+      include("./shared/navbar.php"); ?>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <div class="container py-3 animated fadeIn fast">
@@ -46,4 +46,4 @@
 </div>
 
 
-<?php include("./shared/footer/footer.php"); ?>
+<?php include("./shared/footer.php"); ?>

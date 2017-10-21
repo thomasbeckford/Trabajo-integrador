@@ -55,5 +55,9 @@ if(isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password
     }
   }
 }
-else echo '<div class="container"><h6>Por favor llena todos los campos.</h6><a role="button" class="btn btn-block btn-outline-primary" href="../registrate.php">Volver</div>';
+else echo '
+
+      <div class="container">
+        <h6>Por favor llena todos los campos.</h6>
+        <a role="button" class="btn btn-block btn-outline-primary" href="../registrate.php">Volver</div>';
 ?>

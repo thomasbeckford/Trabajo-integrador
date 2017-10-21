@@ -11,14 +11,10 @@
             customClass: 'animated flip',
             background: '#fff url(//bit.ly/1Nqn9HU)'
 
-            // el swall es hasta aca.. hay un bug de una promesa.. entonces sigue abajo .. 
+            // el swall es hasta aca.. hay un bug de una promesa.. entonces sigue abajo ..
 
           }).then(function () {
-            swal(
-              'Deleted!',
-              'Your file has been deleted.',
-              'success'
-            )
+          
           }, function (dismiss) {
             // dismiss can be 'cancel', 'overlay',
             // 'close', and 'timer'

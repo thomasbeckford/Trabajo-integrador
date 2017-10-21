@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/animate.css">
-  <link rel="stylesheet" href="./assets/master.css">
-  <link rel="stylesheet" href="./assets/search_box.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/master.css">
+  <link rel="stylesheet" href="./assets/css/search_box.css">
   <!-- Swiper -->
   <link rel="stylesheet" href="./assets/css/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/swiperStyle.css">
 
-  <script src="./assets/passValidator.js"></script>
+  <script src="./assets/js/passValidator.js"></script>
   <script src="./assets/js/swiper.min.js"></script>
 
 

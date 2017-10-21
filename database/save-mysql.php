@@ -3,7 +3,7 @@
 session_start();
 //require ("../functions/validar-form.php"); //nueva funcion no testeada aca!
 include('lib/password.php');
-include('dbconnect.php');
+include('./dbconnect.php');
 
 
 // Si existe el post de register

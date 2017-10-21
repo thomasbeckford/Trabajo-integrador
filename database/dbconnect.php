@@ -1,5 +1,5 @@
 <?php
-require('../shared/head/head.php');
+require('../shared/head.php');
 
 
 define('MYSQL_USER', 'root');

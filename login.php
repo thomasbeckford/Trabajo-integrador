@@ -1,5 +1,5 @@
-<?php include("./shared/head/head.php");
-      include("./shared/navbar/navbar.php"); ?>
+<?php include("./shared/head.php");
+      include("./shared/navbar.php"); ?>
 
 <div class="container py-3 animated fadeIn fast">
     <div class="row">
@@ -10,7 +10,7 @@
                       <span class="font-weight-bold">Usuario / Telefono movil</span><div class="form-group">
                           <input class="form-control input-lg" name="username" type="text" required>
                       </div><span class="align-right">
-                        <span  class="font-weight-bold">Contraseña </span> <span ><a  href="forgot-pass.php">¿Olvidaste la contraseña?</a></span><div class="form-group">
+                        <span  class="font-weight-bold">Contraseña </span> <span ><a  href="passrecover.php">¿Olvidaste la contraseña?</a></span><div class="form-group">
                             <input class="form-control input-lg" name="password" type="password" required>
                         </div>
                         <span class="ingresa"><input type="checkbox"> ¿Mantenerme conectado?
@@ -33,4 +33,4 @@
     </div>
 </div>
 
-<?php include("./shared/footer/footer.php"); ?>
+<?php include("./shared/footer.php"); ?>
