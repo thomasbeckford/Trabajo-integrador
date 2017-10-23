@@ -1,11 +1,16 @@
+CREATE TABLE `users` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(30) NOT NULL,
+ `email` varchar(60) NOT NULL,
+ `password` varchar(255) NOT NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `userEmail` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8
 
-CREATE TABLE IF NOT EXISTS Users (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  email VARCHAR(80) NOT NULL,
-  password CHAR(41) NOT NULL,
-  PRIMARY KEY (id),
-  UNIQUE INDEX (email)
-);
+
+
+------Checkear todas estas---------
+
 
 CREATE TABLE IF NOT EXISTS Categories (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -24,7 +29,7 @@ CREATE TABLE IF NOT EXISTS Products (
   description TEXT,
   id_brand NOT NULL,
   id_category NOT NULL,
-  image TEXT NOT NULL	
+  image TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS Transactions (
