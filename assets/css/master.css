@@ -1,18 +1,14 @@
 * { font-family: Arial, 'Roboto', sans-serif; }
-
 body {line-height: 1.2;}
+
 span a {padding-right: 15px; cursor: pointer;}
 span {font-size: 13px;}
-
+footer span  {font-size: 12px !important;line-height: 1.465 !important;color: #555 !important;}
 a button {cursor: pointer; }
 
 .main-container{
   margin-top: 50px;
 }
-
-
-
-footer span  {font-size: 12px !important;line-height: 1.465 !important;color: #555 !important;}
 
 .btn {
   cursor: pointer;
@@ -33,7 +29,6 @@ footer span  {font-size: 12px !important;line-height: 1.465 !important;color: #5
   padding: 0;
   color:rgba(255,255,255,.9);
 }
-
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -61,8 +56,4 @@ footer span  {font-size: 12px !important;line-height: 1.465 !important;color: #5
 
 .fadeIn {
   animation-name: fadeIn;
-}
-
-.main-container {
-  margin-top: 40px;
 }
